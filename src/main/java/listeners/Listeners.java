@@ -14,6 +14,10 @@ import com.aventstack.extentreports.Status;
 import resources.Base;
 import utilities.ExtentReporter;
 
+
+
+
+
 public class Listeners extends Base implements ITestListener{
 	WebDriver driver = null;
 	ExtentReports extentReport = ExtentReporter.getExtentReport();
@@ -25,7 +29,7 @@ public class Listeners extends Base implements ITestListener{
 		String testName = result.getName();
 		extentTest = extentReport.createTest(testName+ "execution started");
 		extentTestThread.set(extentTest);
-	},
+	}
 
 	@Override
 	public void onTestSuccess(ITestResult result) {
