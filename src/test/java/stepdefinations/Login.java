@@ -43,7 +43,7 @@ public class Login extends Base {
 	   	 Thread.sleep(3000);
 	    }
 	    
-	    @And("^User clicks on login button$")
+	    @When("^User clicks on Login button$")
 	    public void user_clicks_on_login_button() throws InterruptedException  {
 	    	loginpage.loginButton().click();
 	    	 Thread.sleep(3000);
